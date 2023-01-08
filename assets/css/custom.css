@@ -292,12 +292,16 @@ li.active {
     flex-wrap: nowrap;
 }
 
-.button-confirm button {
+.button-confirm a {
     width: 50%;
     border: none;
     height: 49px;
     border-radius: 50px;
     color: #fff;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 13px;
+    cursor: pointer;
 }
 
 .btn-save {
@@ -313,9 +317,9 @@ li.active {
     transform: translate(-50%);
 }
 
-.icon-check{
+.icon-check {
     margin-left: 50%;
-    transform: translate(-50%,0);
+    transform: translate(-50%, 0);
 }
 
 .confirm-success {
