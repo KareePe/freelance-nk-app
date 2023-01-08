@@ -24,7 +24,7 @@ span {
     width: 100%;
     height: auto;
     position: relative;
-    z-index: 9999;
+    z-index: 9;
     margin-bottom: 70px;
 }
 
@@ -113,7 +113,7 @@ span {
     line-height: 0.5;
 }
 
-.box-member-info p span{
+.box-member-info p span {
     color: #222B45;
     font-weight: 700;
 }
@@ -135,7 +135,7 @@ span {
     position: fixed;
     bottom: 0;
     padding: 20px 0;
-    z-index: 9999;
+    z-index: 9;
 }
 
 .nav ul {
@@ -190,4 +190,143 @@ li.active a {
 
 li.active {
     margin-top: -7px;
+}
+
+.coupon-select {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+.coupon-select a {
+    display: block;
+    width: 50%;
+    text-align: center;
+    padding-top: 10px;
+    height: 45px;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.active-coupon {
+    background-color: #fff !important;
+    color: #2196F3 !important;
+}
+
+.points {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1;
+}
+
+.points p:nth-child(2) {
+    font-weight: 700;
+    font-size: 48px;
+    color: #FFD600;
+}
+
+.box-coupon {
+    width: 100%;
+    margin-top: 25px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    display: flex;
+    gap: 15px;
+    height: 150px;
+}
+
+.coupon-img {
+    width: auto;
+    padding: 5px 5px 2px 4px;
+    border-right: 2px dashed #C4C4C4;
+}
+
+.coupon-img img {
+    height: 100%;
+    object-fit: contain;
+}
+
+.coupon-detail {
+    width: 66.7%;
+    text-align: center;
+    padding-right: 15px;
+}
+
+.coupon-detail p {
+    font-weight: 600;
+    font-size: 18px;
+    margin-top: 30px
+}
+
+.coupon-detail a {
+    display: block;
+    width: 100%;
+    height: 40px;
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    background: #00CAE0;
+    border-radius: 10px;
+}
+
+.confirm-head {
+    font-weight: 600;
+    font-size: 24px;
+    color: #333333;
+    text-align: center;
+}
+
+.button-confirm {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    flex-wrap: nowrap;
+}
+
+.button-confirm button {
+    width: 50%;
+    border: none;
+    height: 49px;
+    border-radius: 50px;
+    color: #fff;
+}
+
+.btn-save {
+    background: #00CAE0;
+}
+
+.btn-cancle {
+    background: #DADADA;
+}
+
+.modal-dialog {
+    margin-top: 50% !important;
+    transform: translate(-50%);
+}
+
+.icon-check{
+    margin-left: 50%;
+    transform: translate(-50%,0);
+}
+
+.confirm-success {
+    font-weight: 600;
+    font-size: 24px;
+    text-align: center;
+    color: #00CAE0;
+}
+
+.confirm-desc {
+    font-size: 20px;
+    color: #333333;
+    text-align: center;
 }

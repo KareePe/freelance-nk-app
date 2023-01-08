@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NK App</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <!-- Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+    <div class="bg-head"></div>
+
+    <div class="box-container">
+        <div class="coupon-select">
+            <a href="coupon.html" class="active-coupon">แลกแต้ม</a>
+            <a href="my-coupon.html">คูปองของฉัน</a>
+        </div>
+        <div class="box-member" style="padding:15px;height: 122px;">
+            <div class="points">
+                <p>คะแนนสะสม</p>
+                <p>18</p>
+            </div>
+        </div>
+        <div class="box-coupon">
+            <div class="coupon-img">
+                <img src="assets/images/coupon-1.png" alt="">
+            </div>
+            <div class="coupon-detail">
+                <p>ฟรีค่าเล่น 1 ชั่วโมง</p>
+                <a href="" data-bs-toggle="modal" data-bs-target="#pointModal">ใช้ 80 คะแนน</a>
+            </div>
+        </div>
+        <div class="box-coupon">
+            <div class="coupon-img">
+                <img src="assets/images/coupon-2.png" alt="">
+            </div>
+            <div class="coupon-detail">
+                <p>ฟรีค่าเล่น 1 ชั่วโมง</p>
+                <a href="" data-bs-toggle="modal" data-bs-target="#pointModal">ใช้ 80 คะแนน</a>
+            </div>
+        </div>
+        <div class="box-coupon">
+            <div class="coupon-img">
+                <img src="assets/images/coupon-3.png" alt="">
+            </div>
+            <div class="coupon-detail">
+                <p>ฟรีค่าเล่น 1 ชั่วโมง</p>
+                <a href="" data-bs-toggle="modal" data-bs-target="#pointModal">ใช้ 80 คะแนน</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="nav">
+        <ul>
+            <li>
+                <a href="index.html">
+                    <i class='bx bx-id-card'></i>
+                    <p>บัตรสมาชิก</p>
+                </a>
+            </li>
+            <li class="active">
+                <a href="coupon.html">
+                    <i class='bx bxs-coupon'></i>
+                    <p>คูปอง </p>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <i class='bx bx-edit-alt'></i>
+                    <p>แก้ไข</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="pointModal" tabindex="-1" aria-labelledby="pointModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- <div class="modal-header">
+                    <h5 class="modal-title" id="pointModalLabel">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div> -->
+                <div class="modal-body">
+                    <p class = "confirm-head">ยืนยันการแลกคะแนนหรือไม่?</p>
+                    <div class = "button-confirm">
+                        <button class ="btn-cancle" data-bs-dismiss="modal" aria-label="Close">ยกเลิก</button>
+                        <button class ="btn-save" data-bs-toggle="modal" data-bs-target="#confirmModal" data-bs-dismiss="modal">บันทึก</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="confirmModal" tabindex="-1" aria-labelledby="confirmModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- <div class="modal-header">
+                    <h5 class="modal-title" id="confirmModalLabel">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div> -->
+                <div class="modal-body">
+                    <img src="assets/images/check.png" class = "icon-check" alt="">
+                    <p class = "confirm-success">แลกคะแนนสำเร็จ</p>
+                    <p class = "confirm-desc">คุณได้รับคูปองเล่นฟรี 1 ชั่วโมง?</p>
+                    <div class = "button-confirm">
+                        <button class ="btn-cancle" data-bs-dismiss="modal" aria-label="Close">ยกเลิก</button>
+                        <button class ="btn-save">คูปองของฉัน</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
