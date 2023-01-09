@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NK App</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <!-- Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+    <div class="bg-head"></div>
+
+    <div class="box-container">
+        <div class="box-head">
+            <h1>แก้ไขข้อมูลส่วนตัว</h1>
+        </div>
+        <form method="post">
+            <div class="box-edit">
+
+                <div class="form-input">
+                    <label for="">ชื่อ</label>
+                    <input type="text" class="ip-form">
+                </div>
+                <div class="form-input">
+                    <label for="">นามสกุล</label>
+                    <input type="text" class="ip-form">
+                </div>
+                <label for="">วันเดือนปีเกิด</label>
+                <div class="form-pick">
+                    <select name="date" id="" class="select-form">
+                        <option selected disabled>วัน</option>
+                        <option value="1">01</option>
+                        <option value="2">02</option>
+                        <option value="3">03</option>
+                        <option value="4">04</option>
+                    </select>
+                    <select name="date" id="" class="select-form">
+                        <option selected disabled>เดือน</option>
+                        <option value="1">01</option>
+                        <option value="2">02</option>
+                        <option value="3">03</option>
+                        <option value="4">04</option>
+                    </select>
+                    <select name="date" id="" class="select-form">
+                        <option selected disabled>ปี</option>
+                        <option value="1">2022</option>
+                        <option value="2">2023</option>
+                        <option value="3">2024</option>
+                        <option value="4">2025</option>
+                    </select>
+                </div>
+                <label for="">วันเดือนปีเกิด</label>
+                <div class="form-check">
+                    <div class="box-check">
+                        <input type="radio" id="male" name="sex">
+                        <label for="male">ชาย</label>
+                    </div>
+                    <div class="box-check">
+                        <input type="radio" id="female" name="sex">
+                        <label for="female">หญิง</label>
+                    </div>
+                    <div class="box-check">
+                        <input type="radio" id="etc" name="sex">
+                        <label for="etc">อื่นๆ</label>
+                    </div>
+                </div>
+                <div class="form-input">
+                    <label for="">เบอร์โทรศัพท์</label>
+                    <input type="text" class="ip-form">
+                </div>
+                <div class="form-input">
+                    <label for="">อีเมล</label>
+                    <input type="text" class="ip-form">
+                </div>
+                <div class="form-input">
+                    <label for="">Instagram</label>
+                    <input type="text" class="ip-form">
+                </div>
+                <div class="form-input">
+                    <label for="">ที่อยู่</label>
+                    <textarea type="text" class="ip-form" cols="4"></textarea>
+                </div>
+
+            </div>
+            <div class="button-confirm">
+                <button type="reset" class="btn-cancle" style="background-color: #DADADA !important;" data-bs-dismiss="modal"
+                    aria-label="Close">ยกเลิก</button>
+                <button type="submit" class="btn-save" data-bs-toggle="modal" data-bs-target="#confirmModal"
+                    data-bs-dismiss="modal">บันทึก</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="nav">
+        <ul>
+            <li>
+                <a href="index.html">
+                    <i class='bx bx-id-card'></i>
+                    <p>บัตรสมาชิก</p>
+                </a>
+            </li>
+            <li>
+                <a href="coupon.html">
+                    <i class='bx bxs-coupon'></i>
+                    <p>คูปอง </p>
+                </a>
+            </li>
+            <li class="active">
+                <a href="edit.html">
+                    <i class='bx bx-edit-alt'></i>
+                    <p>แก้ไข</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

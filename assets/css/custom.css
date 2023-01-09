@@ -3,7 +3,7 @@
 body {
     padding: 0;
     margin: 0;
-    background-color: #D8D8D8;
+    background-color: #f4f4f4;
     font-family: 'Inter', 'Kanit', sans-serif;
 }
 
@@ -306,6 +306,18 @@ li.active {
     cursor: pointer;
 }
 
+.button-confirm button {
+    width: 50%;
+    border: none;
+    height: 49px;
+    border-radius: 50px;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 0;
+    cursor: pointer;
+}
+
 .btn-save {
     background: #00CAE0;
 }
@@ -417,4 +429,69 @@ li.active {
     font-weight: 500;
     font-size: 16px;
     color: #94A3B8;
+}
+
+.box-edit {
+    background: #FFFFFF;
+    border-radius: 30px;
+    padding: 44px 20px;
+    margin: 20px 0 30px 0;
+}
+
+.form-input {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+}
+.box-edit label{
+    margin-bottom: 10px;
+}
+
+.ip-form {
+    width: 100%;
+    border: 1px solid #C4C4C4;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    height: 56px;
+    padding: 0 15px;
+    font-size: 16px;
+}
+
+.ip-form:focus,
+.ip-form:active {
+    border: 2px solid #2196F3;
+}
+
+.form-pick {
+    width: 100%;
+    display: flex;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+.select-form {
+    width: 100%;
+    height: 44px;
+    text-align: center;
+    padding: 0 15px;
+    background: #FFFFFF;
+    border: 1px solid #DADADA;
+    border-radius: 6px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+}
+
+textarea.ip-form{
+    height: 138px;
+}
+
+.form-check{
+    width: 100%;
+    display: flex;
+}
+
+.box-check{
+    width: 100%;
 }
