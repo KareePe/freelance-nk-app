@@ -34,6 +34,7 @@ span {
     font-size: 32px;
     margin-top: 30px;
     text-align: center;
+    margin-bottom:20px;
 }
 
 .box-member {
@@ -73,6 +74,7 @@ span {
 .member-detail-box p {
     font-weight: 400;
     font-size: 16px;
+    margin-bottom: 0;
 }
 
 .member-detail-box p:nth-child(2) {
@@ -187,6 +189,7 @@ li.active a {
     height: 40px;
     background: #00CAE0;
     border-radius: 20px;
+    font-weight: 500;
     color: #fff !important;
 }
 
